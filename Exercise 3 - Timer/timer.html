@@ -2,15 +2,23 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="timer.css">
+    <!-- <link rel="stylesheet" href="timer.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-black text-white flex flex-col justify-center items-center space-y-5">
 
-    <h2>Exercise 3 - Timer</h2>
+    <h2 class="mt-8 font-bold text-5xl">Timer</h2>
 
-    <div id="myTimer">
-        Your timer should go here!
+    <div id="myTimer" class="text-9xl">
+        0
+    </div>
+
+    <div class="flex space-x-4">
+        <button class="px-5 py-3 bg-gray-800 rounded-md" id="resetBtn">Reset</button>
+        <button class="px-5 py-3 bg-gray-800 rounded-md" id="addBtn" onclick="differentSec(1)">+</button>
+        <button class="px-5 py-3 bg-gray-800 rounded-md" id="minusBtn" onclick="differentSec(-1)">-</button>
+        <button class="px-5 py-3 bg-gray-800 rounded-md" id="startBtn">Start</button>
     </div>
 
     <script src="./timer.js"></script>
